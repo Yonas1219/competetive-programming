@@ -1,0 +1,1 @@
+last_digit = digits[-1] + 1
