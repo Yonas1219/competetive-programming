@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .stats {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .stats p {
+      margin: 5px 0;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #start-btn {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+    }
+
+    #stop-btn {
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+    }
+
+    .history {
+      margin-bottom: 20px;
+    }
+
+    .history-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .settings {
+      text-align: center;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <h1>Fitness Tracker</h1>
+
+    <div class="stats">
+      <p>Today's Stats:</p>
+      <p>- Steps: <span id="steps">XXXXX</span></p>
+      <p>- Calories Burned: <span id="calories">XXXX</span> kcal</p>
+      <p>- Distance: <span id="distance">XX.XX</span> km</p>
+    </div>
+
+    <div class="btn-container">
+      <button id="start-btn">Start Tracking</button>
+      <button id="stop-btn">Stop Tracking</button>
+    </div>
+
+    <div class="history">
+      <p>History:</p>
+      <div class="history-item">
+        <p>[Date]: Steps: [XXXX] Calories: [XXXX] Distance: [XX]</p>
+      </div>
+      <!-- Add more history items as needed -->
+      <button id="see-more-btn">See More</button>
+    </div>
+
+    <div class="settings">
+      <p>Settings:</p>
+      <label for="goal">Goal:</label>
+      <input type="text" id="goal" value="XXXXX"> steps<br>
+      <label for="unit">Unit:</label>
+      <input type="radio" id="imperial" name="unit" checked> Imperial
+      <input type="radio" id="metric" name="unit"> Metric
+    </div>
+
+  </div>
+
+</body>
+</html>
