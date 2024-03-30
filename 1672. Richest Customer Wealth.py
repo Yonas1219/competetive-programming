@@ -1,5 +1,6 @@
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
+#initialization 
         max_wealth = 0
         for customer in accounts:
            wealth = sum(customer)
