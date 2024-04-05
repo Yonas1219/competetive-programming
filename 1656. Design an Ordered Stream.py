@@ -5,7 +5,7 @@ class OrderedStream:
         self.pointer = 0
 
     def insert(self, idKey: int, value: str) -> List[str]:
-        self.stream[idKey - 1] = value  # Store the value at the correct index
+        self.stream[idKey - 1] = value  # Store the value at the correct index of the list
         chunk = []
         
         # Check if the next value in order is available
