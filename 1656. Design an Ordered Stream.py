@@ -8,7 +8,7 @@ class OrderedStream:
         self.stream[idKey - 1] = value  # Store the value at the correct index of the list
         chunk = []
         
-        # Check if the next value in order is available
+        # Check if the next value in order is available in stream
         while self.pointer < len(self.stream) and self.stream[self.pointer]:
             chunk.append(self.stream[self.pointer])
             self.pointer += 1
